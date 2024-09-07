@@ -1,0 +1,15 @@
+<%  layout("./layouts/boilerplate.ejs") %> 
+<body>
+    <h2 >Edit</h2>
+
+    <form method="post" action="/posts/edit/<%= list._id %>?_method=PUT">
+        <input type="text" name="List[name]"  value="<%=list.name%>">
+        <br><br>
+        <input type="text" name="List[img]" value="<%=list.img%>"> <br> <br>
+        <textarea name="List[discription]" id="" cols="40" rows="8" ><%=list.discription %></textarea>
+        <br><br>
+        <input type="date" name="List[date]"  value="<%= list.date.toISOString().split('T')[0] %>" >
+        <button id="Submit">Submit</button>
+    </form>
+    <a class="show-more" href="http://localhost:8080/posts">Cancel</a>
+</body>

@@ -1,0 +1,13 @@
+#Submit{
+    background-color: black;
+    border-radius: 2rem;
+    color:  white;
+}
+.newForm{
+   
+    margin-left: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    margin: 0, 0, 2rem;
+    justify-content: center;
+}

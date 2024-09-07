@@ -1,0 +1,31 @@
+h1{
+    color:red;
+}
+
+.navbar{
+    background-color: wheat;
+    position: fixed;
+}
+
+.miya{
+    width: 50rem;
+    height: 49rem;
+}
+.card{
+    background-color: aquamarine;
+    margin: 0.5rem;
+}
+.delete{
+    text-decoration: none;
+    background-color: rgb(50, 235, 235);
+    border-radius: 0.4rem;
+    margin-top: 0.7rem;
+}
+.delete:hover{
+   
+    background-color: rgb(155, 210, 210);
+}
+.show-more{
+   text-decoration: none;
+
+}

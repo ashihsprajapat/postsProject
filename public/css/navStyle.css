@@ -1,0 +1,16 @@
+.nav-link{
+    margin-left: 4rem;
+}
+.nav-link:hover{
+    margin-left: 4rem;
+    color: black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: blanchedalmond;
+   
+  
+}
+.card{
+    width: 18rem;
+    height: 17rem;
+}

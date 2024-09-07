@@ -1,0 +1,25 @@
+.show{
+    width: 18rem;
+    height: 19rem;
+    border: 0ch;
+}
+.showimg{
+    width: 19rem;
+    height: 19rem;
+    padding: 0%;
+    border-radius: 2rem;
+}
+.back_to_home{
+    text-decoration: none;
+}
+.edit{
+    background-color: rgb(208, 103, 103);
+    color: white;
+    border-radius: 2rem;
+  width: fit-content;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+    text-decoration: none;
+   
+ 
+}

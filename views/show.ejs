@@ -1,0 +1,19 @@
+<%  layout("./layouts/boilerplate.ejs") %> 
+<body>
+   <h3>All details</h3>
+   <div class="container text-center row">
+      <div class="card col col-lg-2 col-md-2  col-sm-2 show " style="width: 20rem;" >
+   <img class="showimg" src="<%= List.img %>" alt="img"> 
+      </div>
+      <div class="card col col-lg-2  col-md-2 col-sm-2 content" style="width: 20rem;" >
+        <p><b>ID :</b><%= List.name  %></p>
+       
+       <p><b>Content :</b><%= List.discription %>.</p> 
+      
+       <p><b>Date :</b><%= new Date(List.date).toLocaleDateString('en-US') %></p> 
+       <center>
+<a href="http://localhost:8080/posts/edit/<%= List._id %>" class="edit" >Edit</a></center> <br>
+   <a href="http://localhost:8080/posts" class="back_to_home">back to home</a>
+</div>
+</div>
+</body>

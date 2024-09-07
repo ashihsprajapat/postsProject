@@ -1,0 +1,39 @@
+<%  layout("./layouts/boilerplate.ejs") %> 
+</head>
+<body>
+    <h1>Quera Posts</h1>
+   
+        <div class="container text-center row">
+        <% for(let list of listings){ %> 
+           
+            <div class="card col col-lg-2" style="width: 10rem;">
+                 <img src="<%= list.img %>" class="card-img-top" alt="..." > 
+                <div class="card-body">
+                  <h5 class="card-title"> <b><%= list.name %></b></h5>
+                 
+                </div>
+                <br>
+               <a class="show-more"  href="http://localhost:8080/posts/<%= list._id %>">Show More</a>
+              
+                <form method="post" action="/posts/<%= list._id %>?_method=delete">
+                    <button  class="delete">delete</button>
+                </form>
+                <hr>
+           
+        </div>
+       <% } %>
+    </div>
+    
+   
+       
+          
+         
+      
+
+    <!-- <form action="/posts/new" method="get">
+        <button>new</button>
+    </form> -->
+
+</body>
+
+
